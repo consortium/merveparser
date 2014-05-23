@@ -7,25 +7,25 @@
 package main
 
 import (
-	"os"
-	"fmt"
-	"flag"
+    "os"
+    "fmt"
+    "flag"
     "io/ioutil"
     "log"
-	"path/filepath"
+    "path/filepath"
     "path"
     "strings"
     "strconv"
 )
 
 const (
-	ProgName    = "merveparser"
-	ProgVersion = "0.1"
+    ProgName    = "merveparser"
+    ProgVersion = "0.1"
 )
 
 var (
-	versionFlag 		= flag.Bool("v", false, "Display version number and exit")
-	importPathFlag		= flag.String("ip", ".", "Path to textfiles")
+    versionFlag         = flag.Bool("v", false, "Display version number and exit")
+    importPathFlag      = flag.String("ip", ".", "Path to textfiles")
     NCPU                = flag.Int("threads", 1, "Max CPU cores")             
 )
 
